@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'tranaTest' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for tranaTest
+  pod 'RNMobileCenter', '~> 0.4.0'
+  pod 'MobileCenter', '~> 0.6.0'
+
+  
+
+  target 'tranaTestTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'tranaTest-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for tranaTest-tvOS
+
+  target 'tranaTest-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
