@@ -13,6 +13,7 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* tranaTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tranaTestTests.m */; };
+		11980C631EAA56DB0005D515 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11980C621EAA56DB0005D515 /* GoogleService-Info.plist */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -38,7 +39,6 @@
 		4B49C7EC1EAA2A7C00F7F32D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B49C7E91EAA2A7C00F7F32D /* Bolts.framework */; };
 		4B49C7ED1EAA2A7C00F7F32D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B49C7EA1EAA2A7C00F7F32D /* FBSDKCoreKit.framework */; };
 		4B49C7EE1EAA2A7C00F7F32D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B49C7EB1EAA2A7C00F7F32D /* FBSDKLoginKit.framework */; };
-		4B49C80D1EAA2E2500F7F32D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B49C80C1EAA2E2500F7F32D /* GoogleService-Info.plist */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		84BBB8266D9B0087D50AB395 /* libPods-tranaTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2500A2B5EBC0896976E38D6 /* libPods-tranaTest.a */; };
@@ -282,6 +282,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* tranaTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tranaTestTests.m; sourceTree = "<group>"; };
 		0513EB66C862349FD66E7B93 /* Pods-tranaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tranaTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-tranaTest/Pods-tranaTest.release.xcconfig"; sourceTree = "<group>"; };
+		11980C621EAA56DB0005D515 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "tranaTest/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* tranaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tranaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -301,7 +302,6 @@
 		4B49C7E91EAA2A7C00F7F32D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../node_modules/react-native-social-auth/ios/FacebookSDK/Bolts.framework"; sourceTree = "<group>"; };
 		4B49C7EA1EAA2A7C00F7F32D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../node_modules/react-native-social-auth/ios/FacebookSDK/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		4B49C7EB1EAA2A7C00F7F32D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../node_modules/react-native-social-auth/ios/FacebookSDK/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
-		4B49C80C1EAA2E2500F7F32D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Documents/FacebookSDK/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4BB6C94924B4D27B523B80E9 /* libPods-tranaTest-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tranaTest-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE8ED2BA4564DAD9863FED4 /* Firestack.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = Firestack.xcodeproj; path = "../node_modules/react-native-firestack/ios/Firestack.xcodeproj"; sourceTree = "<group>"; };
 		58524795CB4041DB82B829E3 /* RNCrashes.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCrashes.xcodeproj; path = "../node_modules/mobile-center-crashes/ios/RNCrashes.xcodeproj"; sourceTree = "<group>"; };
@@ -576,7 +576,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				4B49C80C1EAA2E2500F7F32D /* GoogleService-Info.plist */,
+				11980C621EAA56DB0005D515 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* tranaTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* tranaTestTests */,
@@ -1046,7 +1046,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				4B49C80D1EAA2E2500F7F32D /* GoogleService-Info.plist in Resources */,
+				11980C631EAA56DB0005D515 /* GoogleService-Info.plist in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				F2ECA5ADAFE14D06B52AA27F /* MobileCenter-Config.plist in Resources */,
 			);
