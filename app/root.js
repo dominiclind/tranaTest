@@ -7,6 +7,7 @@ import {
 
 // screens
 import Login from 'app/screens/Login';
+import Feed from 'app/screens/Feed';
 
 class App extends Component {
 
@@ -16,7 +17,7 @@ class App extends Component {
 
   render() {
     return (
-      <Login />
+      <Feed />
     )
   }
 }
