@@ -22,6 +22,13 @@ import ITEMS from 'app/utils/items';
 const OVERLAY_HEIGHT = 400;
 
 class Feed extends Component {
+  static navigationOptions = {
+    tabBarLabel: '',
+    // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    tabBarIcon: ({ tintColor }) => (
+      <Text style={{fontSize: 34}}>🏚</Text>
+    ),
+  };
 
   constructor(props) {
     super(props)
@@ -57,7 +64,7 @@ class Feed extends Component {
     track(item, () => {
       this.hideAdd()
     });
-  } 
+  }
   render() {
     const { showDimmer, showAdd, feed } = this.state;
 
@@ -75,7 +82,7 @@ class Feed extends Component {
 
     return (
       <View style={styles.screen}>
-        
+
         <ScrollView style={{flex: 1}}>
         {feed.map((item) => (
           <FeedItem
@@ -121,7 +128,7 @@ class Feed extends Component {
             ))}
           </ScrollView>
         </Animated.View>
-      
+
       </View>
     )
   }
@@ -164,7 +171,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     height: OVERLAY_HEIGHT,
     width: '100%',
-    backgroundColor: 'black' 
+    backgroundColor: 'black'
   },
   trackItem: {
     padding: 20
