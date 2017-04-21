@@ -33,7 +33,7 @@ class FeedItem extends Component {
         </View>
         <View style={styles.contentContainer}>
           <Text style={styles.name}>{name}</Text>
-          <Text style={styles.desc}><Text style={styles.bold}>{thing}</Text></Text>
+
           <Text style={styles.date}>{distanceInWords(new Date(date), new Date())}</Text>
 
           {/* }
@@ -44,6 +44,7 @@ class FeedItem extends Component {
           {*/}
 
         </View>
+        <Text style={styles.desc}><Text style={styles.bold}>{thing}</Text></Text>
       </View>
     )
   }
@@ -66,21 +67,27 @@ const styles = StyleSheet.create({
   },
   name: {
     fontWeight: '500',
-    fontSize: 12,
+    fontSize: 15,
     lineHeight: 14,
-    marginBottom: 2
+    marginBottom: 0,
+    marginTop: 5
   },
   desc: {
     color: '#868E96',
-    fontSize: 15,
-    marginBottom: 8
+    fontSize: 30,
+    marginBottom: 8,
+    position: 'absolute',
+    right: 20,
+    top: 12,
   },
   bold :{
     fontWeight: '500',
     color: 'black'
   },
   date: {
-    fontSize: 12
+    fontSize: 12,
+    marginTop: 5,
+    color: '#868E96',
   },
   image: {
     width: 42,
