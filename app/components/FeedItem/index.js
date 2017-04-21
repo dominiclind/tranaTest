@@ -7,6 +7,8 @@ import {
   StyleSheet
 } from 'react-native';
 
+import {distanceInWords} from 'date-fns'
+
 class FeedItem extends Component {
 
   constructor(props) {
@@ -17,21 +19,22 @@ class FeedItem extends Component {
     const {
       name = 'Test Testsson',
       thing = 'Beer',
-      date = '2 hours ago'
+      avatar = false,
+      date = 123412312
     } = this.props;
 
     return (
       <View style={ styles.component }>
         <View style={styles.imageContainer}>
-          <Image
-            source={require('./avatar.png')}
+          {avatar ? (<Image
+            source={{uri: avatar}}
             style={styles.image}
-          />
+          />) : null}
         </View>
         <View style={styles.contentContainer}>
           <Text style={styles.name}>{name}</Text>
           <Text style={styles.desc}>Just finished a <Text style={styles.bold}>{thing}</Text></Text>
-          <Text style={styles.date}>{date}</Text>
+          <Text style={styles.date}>{distanceInWords(date)}</Text>
 
           {/* }
           <View style={styles.meta}>

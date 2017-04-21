@@ -8,7 +8,7 @@ import {
 
 import Button from 'app/components/Button';
 
-import { login } from 'app/utils/fb';
+import { login } from 'app/utils/functions';
 
 class Login extends Component {
 

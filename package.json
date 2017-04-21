@@ -7,6 +7,7 @@
 		"test": "jest"
 	},
 	"dependencies": {
+		"date-fns": "^1.28.3",
 		"mobile-center-analytics": "^0.4.0",
 		"mobile-center-crashes": "^0.4.0",
 		"react": "16.0.0-alpha.6",
