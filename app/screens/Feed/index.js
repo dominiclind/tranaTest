@@ -26,6 +26,7 @@ class Feed extends Component {
   constructor(props) {
     super(props)
 
+    this._scrollView = false;
     this.state = {
       showAdd: new Animated.Value(0),
       showDimmer: false,
@@ -34,7 +35,11 @@ class Feed extends Component {
   }
 
   componentDidMount() {
-    getItems((feed) => this.setState({feed}));
+    getItems((feed) => {
+      this.setState({feed});
+      // reset scroll
+      this._scrollView.scrollTo({y: 0});
+    });
   }
 
   showAdd() {
@@ -76,7 +81,10 @@ class Feed extends Component {
     return (
       <View style={styles.screen}>
         
-        <ScrollView style={{flex: 1}}>
+        <ScrollView
+          style={{flex: 1}}
+          ref={(scrollView) => { this._scrollView = scrollView; }}
+        >
         {feed.map((item) => (
           <FeedItem
             key={item.id}
