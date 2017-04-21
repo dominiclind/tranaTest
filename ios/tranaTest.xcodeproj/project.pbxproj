@@ -674,6 +674,10 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = ZZJ836M39Z;
+						ProvisioningStyle = Manual;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -1325,8 +1329,10 @@
 			baseConfigurationReference = 73254AA1A48E3DC6833D8134 /* Pods-tranaTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = ZZJ836M39Z;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/mobile-center-analytics/ios/RNAnalytics",
@@ -1340,6 +1346,8 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = tranaTest;
+				PROVISIONING_PROFILE = "45629c84-2052-40c3-8592-81c688e34f19";
+				PROVISIONING_PROFILE_SPECIFIER = tranaTestMobilecenter;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1350,6 +1358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZJ836M39Z;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/mobile-center-analytics/ios/RNAnalytics",
@@ -1363,6 +1372,8 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = tranaTest;
+				PROVISIONING_PROFILE = "45629c84-2052-40c3-8592-81c688e34f19";
+				PROVISIONING_PROFILE_SPECIFIER = tranaTestMobilecenter;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
