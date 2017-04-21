@@ -48,8 +48,8 @@ class Feed extends Component {
     this.setState({showDimmer: true});
     Animated.spring(this.state.showAdd,{
       toValue: 1,
-      tension: 20,
-      spring: 10
+      tension: 40,
+      spring: 20
     }).start();
   }
   hideAdd() {
