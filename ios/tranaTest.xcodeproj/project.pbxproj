@@ -13,6 +13,7 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* tranaTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tranaTestTests.m */; };
+		11980C631EAA56DB0005D515 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11980C621EAA56DB0005D515 /* GoogleService-Info.plist */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -22,6 +23,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		17821EBA15B34089BB10013D /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8838FC19AF6543669E5CC4D8 /* libCodePush.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -34,7 +36,11 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* tranaTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* tranaTestTests.m */; };
+		43F8C82F703B416C8FDDBC59 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F27A98FD6724CEEB4781033 /* libz.tbd */; };
 		486747B59234C686FB567B97 /* libPods-tranaTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8D3B4C807E88641263615C /* libPods-tranaTestTests.a */; };
+		4B49C7EC1EAA2A7C00F7F32D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B49C7E91EAA2A7C00F7F32D /* Bolts.framework */; };
+		4B49C7ED1EAA2A7C00F7F32D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B49C7EA1EAA2A7C00F7F32D /* FBSDKCoreKit.framework */; };
+		4B49C7EE1EAA2A7C00F7F32D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B49C7EB1EAA2A7C00F7F32D /* FBSDKLoginKit.framework */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		84BBB8266D9B0087D50AB395 /* libPods-tranaTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2500A2B5EBC0896976E38D6 /* libPods-tranaTest.a */; };
@@ -42,6 +48,8 @@
 		CD78CC30F7E53EA2AE02BBDC /* libPods-tranaTest-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB6C94924B4D27B523B80E9 /* libPods-tranaTest-tvOSTests.a */; };
 		DBDC197835BE4C5CAB8D8288 /* libRNAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DCC8BCC11954B2AB8792FF2 /* libRNAnalytics.a */; };
 		ECA5281DE6FE472A9A2A68EA /* libRNCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E268B5D2F55643E1A49A62C0 /* libRNCrashes.a */; };
+		F0DD0E1D85AE4CD780DC76BB /* libRNSocialAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7852F04DC74E999028823F /* libRNSocialAuth.a */; };
+		F1AB2976C44A45D998975997 /* libFirestack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C0D451CC1D4CB0AC2110B2 /* libFirestack.a */; };
 		F2ECA5ADAFE14D06B52AA27F /* MobileCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5134DB059DA4AC0B3A2EC32 /* MobileCenter-Config.plist */; };
 /* End PBXBuildFile section */
 
@@ -207,6 +215,27 @@
 			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
 			remoteInfo = "jschelpers-tvOS";
 		};
+		4B49C77F1EAA280D00F7F32D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BE8ED2BA4564DAD9863FED4 /* Firestack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = Firestack;
+		};
+		4B49C7C91EAA281700F7F32D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7A3744605B44707BDD15391 /* RNSocialAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 533DBF7D1C23D77400AE7307;
+			remoteInfo = RNSocialAuth;
+		};
+		4B49C84D1EAA59CC00F7F32D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89A30CC5B00240EDA1A65B18 /* CodePush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = CodePush;
+		};
 		4B93B4CD1EAA07D800975113 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62FE8F4F0A4A4AFC8F05333B /* RNAnalytics.xcodeproj */;
@@ -262,6 +291,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* tranaTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tranaTestTests.m; sourceTree = "<group>"; };
 		0513EB66C862349FD66E7B93 /* Pods-tranaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tranaTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-tranaTest/Pods-tranaTest.release.xcconfig"; sourceTree = "<group>"; };
+		11980C621EAA56DB0005D515 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "tranaTest/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* tranaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tranaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,18 +307,28 @@
 		2D8D3B4C807E88641263615C /* libPods-tranaTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tranaTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35487AB06348A55C0B3FD8D1 /* Pods-tranaTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tranaTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tranaTestTests/Pods-tranaTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		3FE020525D58420F5863A5EF /* Pods-tranaTest-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tranaTest-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tranaTest-tvOS/Pods-tranaTest-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4A7852F04DC74E999028823F /* libRNSocialAuth.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSocialAuth.a; sourceTree = "<group>"; };
+		4B49C7E91EAA2A7C00F7F32D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../node_modules/react-native-social-auth/ios/FacebookSDK/Bolts.framework"; sourceTree = "<group>"; };
+		4B49C7EA1EAA2A7C00F7F32D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../node_modules/react-native-social-auth/ios/FacebookSDK/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		4B49C7EB1EAA2A7C00F7F32D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../node_modules/react-native-social-auth/ios/FacebookSDK/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		4BB6C94924B4D27B523B80E9 /* libPods-tranaTest-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tranaTest-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE8ED2BA4564DAD9863FED4 /* Firestack.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = Firestack.xcodeproj; path = "../node_modules/react-native-firestack/ios/Firestack.xcodeproj"; sourceTree = "<group>"; };
+		4F27A98FD6724CEEB4781033 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		58524795CB4041DB82B829E3 /* RNCrashes.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCrashes.xcodeproj; path = "../node_modules/mobile-center-crashes/ios/RNCrashes.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		62FE8F4F0A4A4AFC8F05333B /* RNAnalytics.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNAnalytics.xcodeproj; path = "../node_modules/mobile-center-analytics/ios/RNAnalytics.xcodeproj"; sourceTree = "<group>"; };
 		73254AA1A48E3DC6833D8134 /* Pods-tranaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tranaTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tranaTest/Pods-tranaTest.debug.xcconfig"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8838FC19AF6543669E5CC4D8 /* libCodePush.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCodePush.a; sourceTree = "<group>"; };
 		886588E86ACBC6937411F0F9 /* Pods-tranaTest-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tranaTest-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-tranaTest-tvOS/Pods-tranaTest-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		89A30CC5B00240EDA1A65B18 /* CodePush.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
 		9DCC8BCC11954B2AB8792FF2 /* libRNAnalytics.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAnalytics.a; sourceTree = "<group>"; };
 		A0589B25C9BE32266F65D15C /* libPods-tranaTest-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tranaTest-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C0D451CC1D4CB0AC2110B2 /* libFirestack.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libFirestack.a; sourceTree = "<group>"; };
 		B2500A2B5EBC0896976E38D6 /* libPods-tranaTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tranaTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5134DB059DA4AC0B3A2EC32 /* MobileCenter-Config.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "MobileCenter-Config.plist"; path = "tranaTest/MobileCenter-Config.plist"; sourceTree = "<group>"; };
+		B7A3744605B44707BDD15391 /* RNSocialAuth.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSocialAuth.xcodeproj; path = "../node_modules/react-native-social-auth/ios/RNSocialAuth.xcodeproj"; sourceTree = "<group>"; };
 		B947D48442AFE2828F148334 /* Pods-tranaTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tranaTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tranaTestTests/Pods-tranaTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D17A5A2CD5D59902B3583C29 /* Pods-tranaTest-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tranaTest-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tranaTest-tvOSTests/Pods-tranaTest-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E268B5D2F55643E1A49A62C0 /* libRNCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCrashes.a; sourceTree = "<group>"; };
@@ -316,13 +356,20 @@
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
+				4B49C7ED1EAA2A7C00F7F32D /* FBSDKCoreKit.framework in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				DBDC197835BE4C5CAB8D8288 /* libRNAnalytics.a in Frameworks */,
+				4B49C7EE1EAA2A7C00F7F32D /* FBSDKLoginKit.framework in Frameworks */,
+				4B49C7EC1EAA2A7C00F7F32D /* Bolts.framework in Frameworks */,
 				ECA5281DE6FE472A9A2A68EA /* libRNCrashes.a in Frameworks */,
 				84BBB8266D9B0087D50AB395 /* libPods-tranaTest.a in Frameworks */,
+				F1AB2976C44A45D998975997 /* libFirestack.a in Frameworks */,
+				F0DD0E1D85AE4CD780DC76BB /* libRNSocialAuth.a in Frameworks */,
+				17821EBA15B34089BB10013D /* libCodePush.a in Frameworks */,
+				43F8C82F703B416C8FDDBC59 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +506,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4B49C77C1EAA280D00F7F32D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B49C7801EAA280D00F7F32D /* libFirestack.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B49C7AA1EAA281700F7F32D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B49C7CA1EAA281700F7F32D /* libRNSocialAuth.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B49C84A1EAA59CC00F7F32D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B49C84E1EAA59CC00F7F32D /* libCodePush.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4B93B4B11EAA07D800975113 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -509,6 +580,9 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				62FE8F4F0A4A4AFC8F05333B /* RNAnalytics.xcodeproj */,
 				58524795CB4041DB82B829E3 /* RNCrashes.xcodeproj */,
+				4BE8ED2BA4564DAD9863FED4 /* Firestack.xcodeproj */,
+				B7A3744605B44707BDD15391 /* RNSocialAuth.xcodeproj */,
+				89A30CC5B00240EDA1A65B18 /* CodePush.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -525,6 +599,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				11980C621EAA56DB0005D515 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* tranaTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* tranaTestTests */,
@@ -566,10 +641,14 @@
 		DA42436717C3E5A46E17B520 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B49C7E91EAA2A7C00F7F32D /* Bolts.framework */,
+				4B49C7EA1EAA2A7C00F7F32D /* FBSDKCoreKit.framework */,
+				4B49C7EB1EAA2A7C00F7F32D /* FBSDKLoginKit.framework */,
 				B2500A2B5EBC0896976E38D6 /* libPods-tranaTest.a */,
 				A0589B25C9BE32266F65D15C /* libPods-tranaTest-tvOS.a */,
 				4BB6C94924B4D27B523B80E9 /* libPods-tranaTest-tvOSTests.a */,
 				2D8D3B4C807E88641263615C /* libPods-tranaTestTests.a */,
+				4F27A98FD6724CEEB4781033 /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -702,6 +781,14 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 4B49C84A1EAA59CC00F7F32D /* Products */;
+					ProjectRef = 89A30CC5B00240EDA1A65B18 /* CodePush.xcodeproj */;
+				},
+				{
+					ProductGroup = 4B49C77C1EAA280D00F7F32D /* Products */;
+					ProjectRef = 4BE8ED2BA4564DAD9863FED4 /* Firestack.xcodeproj */;
+				},
+				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
@@ -752,6 +839,10 @@
 				{
 					ProductGroup = 4B93B4CF1EAA07D800975113 /* Products */;
 					ProjectRef = 58524795CB4041DB82B829E3 /* RNCrashes.xcodeproj */;
+				},
+				{
+					ProductGroup = 4B49C7AA1EAA281700F7F32D /* Products */;
+					ProjectRef = B7A3744605B44707BDD15391 /* RNSocialAuth.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -912,6 +1003,27 @@
 			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		4B49C7801EAA280D00F7F32D /* libFirestack.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFirestack.a;
+			remoteRef = 4B49C77F1EAA280D00F7F32D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B49C7CA1EAA281700F7F32D /* libRNSocialAuth.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSocialAuth.a;
+			remoteRef = 4B49C7C91EAA281700F7F32D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4B49C84E1EAA59CC00F7F32D /* libCodePush.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCodePush.a;
+			remoteRef = 4B49C84D1EAA59CC00F7F32D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		4B93B4CE1EAA07D800975113 /* libRNAnalytics.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -969,6 +1081,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				11980C631EAA56DB0005D515 /* GoogleService-Info.plist in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				F2ECA5ADAFE14D06B52AA27F /* MobileCenter-Config.plist in Resources */,
 			);
@@ -1278,12 +1391,18 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/mobile-center-analytics/ios/RNAnalytics",
 					"$(SRCROOT)/../node_modules/mobile-center-crashes/ios/RNCrashes",
+					"$(SRCROOT)/../node_modules/react-native-firestack/ios/Firestack",
+					"$(SRCROOT)/../node_modules/react-native-social-auth/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios/CodePush/**",
 				);
 				INFOPLIST_FILE = tranaTestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1306,12 +1425,18 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/mobile-center-analytics/ios/RNAnalytics",
 					"$(SRCROOT)/../node_modules/mobile-center-crashes/ios/RNCrashes",
+					"$(SRCROOT)/../node_modules/react-native-firestack/ios/Firestack",
+					"$(SRCROOT)/../node_modules/react-native-social-auth/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios/CodePush/**",
 				);
 				INFOPLIST_FILE = tranaTestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1333,10 +1458,27 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = ZZJ836M39Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseMessaging/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseRemoteConfig/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+					"\"${PODS_ROOT}/MobileCenter/MobileCenter-SDK-iOS\"",
+					"\"${PODS_ROOT}/RNMobileCenter/RNMobileCenter\"",
+					"\"$(SRCROOT)/../node_modules/react-native-social-auth/ios/FacebookSDK\"",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/mobile-center-analytics/ios/RNAnalytics",
 					"$(SRCROOT)/../node_modules/mobile-center-crashes/ios/RNCrashes",
+					"$(SRCROOT)/../node_modules/react-native-firestack/ios/Firestack",
+					"$(SRCROOT)/../node_modules/react-native-social-auth/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios/CodePush/**",
 				);
 				INFOPLIST_FILE = tranaTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1345,6 +1487,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.river.amsbeer;
 				PRODUCT_NAME = tranaTest;
 				PROVISIONING_PROFILE = "45629c84-2052-40c3-8592-81c688e34f19";
 				PROVISIONING_PROFILE_SPECIFIER = tranaTestMobilecenter;
@@ -1359,10 +1502,27 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZZJ836M39Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseDatabase/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseMessaging/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseRemoteConfig/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseStorage/Frameworks\"",
+					"\"${PODS_ROOT}/MobileCenter/MobileCenter-SDK-iOS\"",
+					"\"${PODS_ROOT}/RNMobileCenter/RNMobileCenter\"",
+					"\"$(SRCROOT)/../node_modules/react-native-social-auth/ios/FacebookSDK\"",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/mobile-center-analytics/ios/RNAnalytics",
 					"$(SRCROOT)/../node_modules/mobile-center-crashes/ios/RNCrashes",
+					"$(SRCROOT)/../node_modules/react-native-firestack/ios/Firestack",
+					"$(SRCROOT)/../node_modules/react-native-social-auth/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios/CodePush/**",
 				);
 				INFOPLIST_FILE = tranaTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1371,6 +1531,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.river.amsbeer;
 				PRODUCT_NAME = tranaTest;
 				PROVISIONING_PROFILE = "45629c84-2052-40c3-8592-81c688e34f19";
 				PROVISIONING_PROFILE_SPECIFIER = tranaTestMobilecenter;
@@ -1395,11 +1556,17 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/mobile-center-analytics/ios/RNAnalytics",
 					"$(SRCROOT)/../node_modules/mobile-center-crashes/ios/RNCrashes",
+					"$(SRCROOT)/../node_modules/react-native-firestack/ios/Firestack",
+					"$(SRCROOT)/../node_modules/react-native-social-auth/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios/CodePush/**",
 				);
 				INFOPLIST_FILE = "tranaTest-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1432,11 +1599,17 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/mobile-center-analytics/ios/RNAnalytics",
 					"$(SRCROOT)/../node_modules/mobile-center-crashes/ios/RNCrashes",
+					"$(SRCROOT)/../node_modules/react-native-firestack/ios/Firestack",
+					"$(SRCROOT)/../node_modules/react-native-social-auth/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-code-push/ios/CodePush/**",
 				);
 				INFOPLIST_FILE = "tranaTest-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1470,6 +1643,9 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.tranaTest-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1495,6 +1671,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);

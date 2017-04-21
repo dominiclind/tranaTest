@@ -10,6 +10,17 @@ target 'tranaTest' do
   pod 'MobileCenter', '~> 0.6.0'
 
   
+source 'https://github.com/CocoaPods/Specs.git'
+[
+  'Firebase/Core',
+  'Firebase/Auth',
+  'Firebase/Storage',
+  'Firebase/Database',
+  'Firebase/RemoteConfig',
+  'Firebase/Messaging'
+].each do |lib|
+  pod lib
+end
 
   target 'tranaTestTests' do
     inherit! :search_paths

@@ -1,0 +1,5 @@
+const {{properCase name}} = () => {
+
+};
+
+export default {{properCase name}};
