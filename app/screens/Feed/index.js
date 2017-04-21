@@ -46,8 +46,8 @@ class Feed extends Component {
     this.setState({showDimmer: true});
     Animated.spring(this.state.showAdd,{
       toValue: 1,
-      tension: 20,
-      spring: 10
+      tension: 40,
+      spring: 20
     }).start();
   }
   hideAdd() {
@@ -62,7 +62,7 @@ class Feed extends Component {
     track(item, () => {
       this.hideAdd()
     });
-  } 
+  }
   render() {
     const { showDimmer, showAdd, feed } = this.state;
 
@@ -80,7 +80,6 @@ class Feed extends Component {
 
     return (
       <View style={styles.screen}>
-        
         <ScrollView
           style={{flex: 1}}
           ref={(scrollView) => { this._scrollView = scrollView; }}
@@ -129,7 +128,7 @@ class Feed extends Component {
             ))}
           </ScrollView>
         </Animated.View>
-      
+
       </View>
     )
   }
@@ -172,7 +171,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     height: OVERLAY_HEIGHT,
     width: '100%',
-    backgroundColor: 'black' 
+    backgroundColor: 'black'
   },
   trackItem: {
     padding: 20

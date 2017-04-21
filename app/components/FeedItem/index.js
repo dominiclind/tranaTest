@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     borderColor: '#E9ECEF',
     flexDirection: 'row',
     paddingHorizontal: 15,
-    paddingVertical: 15
+    paddingVertical: 15,
   },
   imageContainer: {
     justifyContent: 'center'
@@ -75,10 +75,8 @@ const styles = StyleSheet.create({
   desc: {
     color: '#868E96',
     fontSize: 30,
-    marginBottom: 8,
-    position: 'absolute',
-    right: 20,
-    top: 12,
+    justifyContent: 'center',
+    marginLeft: 'auto',
   },
   bold :{
     fontWeight: '500',
