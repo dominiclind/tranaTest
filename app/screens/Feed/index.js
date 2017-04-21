@@ -82,7 +82,7 @@ class Feed extends Component {
             key={item.id}
             avatar={item.user.avatar}
             name={item.user.displayName}
-            thing={`${item.emoji} - ${item.label}`}
+            thing={item.emoji}
             date={item.createdAt || 123901239}
           />
         ))}

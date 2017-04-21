@@ -33,7 +33,7 @@ class FeedItem extends Component {
         </View>
         <View style={styles.contentContainer}>
           <Text style={styles.name}>{name}</Text>
-          <Text style={styles.desc}>Just finished a <Text style={styles.bold}>{thing}</Text></Text>
+          <Text style={styles.desc}><Text style={styles.bold}>{thing}</Text></Text>
           <Text style={styles.date}>{distanceInWords(new Date(date), new Date())}</Text>
 
           {/* }

@@ -58,7 +58,7 @@ export const track = (item, cb) => {
   };
 
   firestack.database.ref('items').push(trackItem).then(cb()).catch((error) => {
-    console.log(error);
+    // console.log(error);
   });
 }
 
@@ -76,7 +76,11 @@ export const getItems = (cb) => {
             id: key
           }
         });
-        cb(arr);
+        cb(arr.sort(function(a, b) {
+            a = new Date(a.createdAt);
+            b = new Date(b.createdAt);
+            return a>b ? -1 : a<b ? 1 : 0;
+        }));
       } else {
         cb([]);
       }
