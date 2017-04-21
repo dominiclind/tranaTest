@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { StackNavigator, TabNavigator } from 'react-navigation';
 
 import {
   View,
@@ -11,6 +12,22 @@ import { checkLogin } from 'app/utils/functions';
 // screens
 import Login from 'app/screens/Login';
 import Feed from 'app/screens/Feed';
+import Leaderboard from 'app/screens/Leaderboard';
+
+const AppNavigator = TabNavigator({
+  Main: {
+    screen: Feed
+  },
+  Leaderboard: {
+    screen: Leaderboard
+  },
+}, {
+  swipeEnabled: true,
+  tabBarOptions: {
+    showLabel: false
+  },
+  animationEnabled: true
+});
 
 class Router extends Component {
 
@@ -49,7 +66,7 @@ class Router extends Component {
           return <Login />
         break;
         case 'feed':
-          return <Feed />
+          return <AppNavigator />
         break;
 
         default:

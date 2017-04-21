@@ -22,6 +22,13 @@ import ITEMS from 'app/utils/items';
 const OVERLAY_HEIGHT = 400;
 
 class Feed extends Component {
+  static navigationOptions = {
+    tabBarLabel: '',
+    // Note: By default the icon is only shown on iOS. Search the showIcon option below.
+    tabBarIcon: ({ tintColor }) => (
+      <Text style={{fontSize: 34}}>🏚</Text>
+    ),
+  };
 
   constructor(props) {
     super(props)
