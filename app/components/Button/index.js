@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import {
   View,
   Text,
-  StyleSheet
+  StyleSheet,
+  TouchableOpacity
 } from 'react-native';
 
 
@@ -18,9 +19,11 @@ class Button extends Component {
 
   render() {
     return (
-      <View style={ styles.component }>
-        <Text>i am component Button!</Text>
-      </View>
+      <TouchableOpacity onPress={this.props.onPress}>
+        <View style={ styles.component }>
+          <Text style={styles.text}>{this.props.children}</Text>
+        </View>
+      </TouchableOpacity>
     )
   }
 }
@@ -29,7 +32,13 @@ class Button extends Component {
 // styles
 const styles = StyleSheet.create({
   component : {
-    backgroundColor:'blue'
+    backgroundColor:'black',
+    paddingVertical: 15,
+    paddingHorizontal: 30
+  },
+  text: {
+    color: 'white',
+    fontSize: 16
   }
 });
 

@@ -126,6 +126,8 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-social-auth')
+    compile project(':react-native-firestack')
     compile project(':mobile-center-crashes')
     compile project(':mobile-center-analytics')
     compile fileTree(dir: "libs", include: ["*.jar"])

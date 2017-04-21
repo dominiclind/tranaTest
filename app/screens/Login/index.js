@@ -8,6 +8,8 @@ import {
 
 import Button from 'app/components/Button';
 
+import { login } from 'app/utils/fb';
+
 class Login extends Component {
 
   constructor(props) {
@@ -25,7 +27,7 @@ class Login extends Component {
         >
           Login screen
         </Text>
-        <Button />
+        <Button onPress={() => login()}>HEj</Button>
       </View>
     )
   }
