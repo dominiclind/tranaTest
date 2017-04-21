@@ -68,14 +68,17 @@ export const getItems = (cb) => {
   firestack.database
     .ref('items')
     .on('value', snapshot => {
-      console.log('got value');
-      const keys = Object.keys(snapshot.value);
-      const arr = keys.map((key) => {
-        return {
-          ...snapshot.value[key],
-          id: key
-        }
-      });
-      cb(arr.reverse());
+      if(snapshot.value){
+        const keys = Object.keys(snapshot.value);
+        const arr = keys.map((key) => {
+          return {
+            ...snapshot.value[key],
+            id: key
+          }
+        });
+        cb(arr);
+      } else {
+        cb([]);
+      }
     }) 
 }
