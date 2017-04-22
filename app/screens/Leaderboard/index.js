@@ -84,31 +84,33 @@ class Leaderboard extends Component {
         paddingTop={0}
         getRef={(scrollView) => { this._scrollView = scrollView; }}
         >
-        
-        <View style={styles.hero}>
           
-          <View style={[styles.placement, styles.p3]}>
-            <Image style={styles.pAvatar}source={{uri: this.state.leaderboard[2].avatar}}/>
-            <View style={styles.pTextW}>
-              <Text style={styles.pText}>3</Text>
+        {this.state.leaderboard.length > 3 ? (
+          <View style={styles.hero}>
+            
+            <View style={[styles.placement, styles.p3]}>
+              <Image style={styles.pAvatar}source={{uri: this.state.leaderboard[2].avatar}}/>
+              <View style={styles.pTextW}>
+                <Text style={styles.pText}>3</Text>
+              </View>
             </View>
-          </View>
 
-          <View style={[styles.placement, styles.p2]}>
-            <Image style={styles.pAvatar}source={{uri: this.state.leaderboard[1].avatar}}/>
-            <View style={styles.pTextW}>
-              <Text style={styles.pText}>2</Text>
+            <View style={[styles.placement, styles.p2]}>
+              <Image style={styles.pAvatar}source={{uri: this.state.leaderboard[1].avatar}}/>
+              <View style={styles.pTextW}>
+                <Text style={styles.pText}>2</Text>
+              </View>
             </View>
-          </View>
 
-          <View style={[styles.placement, styles.p1]}>
-            <Image style={styles.pAvatar}source={{uri: this.state.leaderboard[0].avatar}}/>
-            <View style={styles.pTextW}>
-              <Text style={styles.pText}>1</Text>
+            <View style={[styles.placement, styles.p1]}>
+              <Image style={styles.pAvatar}source={{uri: this.state.leaderboard[0].avatar}}/>
+              <View style={styles.pTextW}>
+                <Text style={styles.pText}>1</Text>
+              </View>
             </View>
-          </View>
 
-        </View>
+          </View>
+        ): null}
 
         {this.state.leaderboard.map(user => (
           <LeaderboardItem
