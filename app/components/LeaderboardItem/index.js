@@ -9,7 +9,7 @@ import {
 
 import {distanceInWords} from 'date-fns'
 
-class FeedItem extends Component {
+class LeaderboardItem extends Component {
 
   constructor(props) {
     super(props)
@@ -18,9 +18,7 @@ class FeedItem extends Component {
   render() {
     const {
       name = 'Test Testsson',
-      thing = false,
       avatar = false,
-      date = false,
       points = false
     } = this.props;
 
@@ -34,24 +32,10 @@ class FeedItem extends Component {
         </View>
         <View style={styles.contentContainer}>
           <Text style={styles.name}>{name}</Text>
-
           {points ? (
             <Text style={styles.date}>{points} poäng</Text>
           ) : null}
-          {date ? (
-            <Text style={styles.date}>{distanceInWords(new Date(date), new Date())}</Text>
-          ) : null}
-          {/* }
-          <View style={styles.meta}>
-            <StyledText weight="bold" style={styles.metaItem}>{duration}</StyledText>
-            <StyledText weight="bold"  style={styles.metaItem}>{weightLifted} kg</StyledText>
-          </View>
-          {*/}
-
         </View>
-        {thing ? (
-          <Text style={styles.desc}><Text style={styles.bold}>{thing}</Text></Text>
-        ): null}
       </View>
     )
   }
@@ -104,4 +88,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default FeedItem
+export default LeaderboardItem

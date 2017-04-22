@@ -86,3 +86,26 @@ export const getItems = (cb) => {
       }
     }) 
 }
+export const getItemsOnce = (cb) => {
+  firestack.database
+    .ref('items')
+    .once('value')
+    .then(snapshot => {
+      if(snapshot.value){
+        const keys = Object.keys(snapshot.value);
+        const arr = keys.map((key) => {
+          return {
+            ...snapshot.value[key],
+            id: key
+          }
+        });
+        cb(arr.sort(function(a, b) {
+            a = new Date(a.createdAt);
+            b = new Date(b.createdAt);
+            return a>b ? -1 : a<b ? 1 : 0;
+        }));
+      } else {
+        cb([]);
+      }
+    })
+}

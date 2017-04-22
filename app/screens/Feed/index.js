@@ -16,6 +16,7 @@ import { track, getItems } from 'app/utils/functions';
 
 import FeedItem from 'app/components/FeedItem';
 import Button from 'app/components/Button';
+import ParallaxHeader from 'app/components/ParallaxHeader';
 
 import ITEMS from 'app/utils/items';
 
@@ -41,7 +42,7 @@ class Feed extends Component {
     }
   }
 
-  componentDidMount() {
+  componentWillMount() {
     getItems((feed) => {
       this.setState({feed});
       // reset scroll
@@ -86,11 +87,12 @@ class Feed extends Component {
     });
 
     return (
-      <View style={styles.screen}>
-        <ScrollView
-          style={{flex: 1}}
-          ref={(scrollView) => { this._scrollView = scrollView; }}
-        >
+      <View style={{flex:1}}>
+      <ParallaxHeader
+        title="Feed"
+        backBtn={false}
+        getRef={(scrollView) => { this._scrollView = scrollView; }}
+      >
         {feed.map((item) => (
           <FeedItem
             key={item.id}
@@ -100,41 +102,42 @@ class Feed extends Component {
             date={item.createdAt || 123901239}
           />
         ))}
+      </ParallaxHeader>
+
+      <View style={styles.addButtonOverlay}>
+        <Button onPress={() => this.showAdd()}>ADD</Button>
+      </View>
+
+      {showDimmer ? (
+        <TouchableWithoutFeedback onPress={() => this.hideAdd()}>
+          <Animated.View
+            style={[
+              styles.dimmer,
+              {
+                opacity: dimmerOpacity
+              }
+            ]}
+          >
+          </Animated.View>
+        </TouchableWithoutFeedback>
+      ) : null}
+      <Animated.View
+        style={[
+          styles.addOverlay,
+          {transform: [ {translateY: translateY} ]}
+        ]}
+      >
+        <ScrollView style={{flex: 1}}>
+          {ITEMS.map((item, i) => (
+            <TouchableOpacity key={i} onPress={() => this.track(item)}>
+              <View style={styles.trackItem}>
+                <Text style={styles.trackText}>{item.emoji} * {item.label}</Text>
+              </View>
+            </TouchableOpacity>
+          ))}
         </ScrollView>
+      </Animated.View>
 
-        <View style={styles.addButtonOverlay}>
-          <Button onPress={() => this.showAdd()}>ADD</Button>
-        </View>
-
-        {showDimmer ? (
-          <TouchableWithoutFeedback onPress={() => this.hideAdd()}>
-            <Animated.View
-              style={[
-                styles.dimmer,
-                {
-                  opacity: dimmerOpacity
-                }
-              ]}
-            >
-            </Animated.View>
-          </TouchableWithoutFeedback>
-        ) : null}
-        <Animated.View
-          style={[
-            styles.addOverlay,
-            {transform: [ {translateY: translateY} ]}
-          ]}
-        >
-          <ScrollView style={{flex: 1}}>
-            {ITEMS.map((item, i) => (
-              <TouchableOpacity key={i} onPress={() => this.track(item)}>
-                <View style={styles.trackItem}>
-                  <Text style={styles.trackText}>{item.emoji} * {item.label}</Text>
-                </View>
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
-        </Animated.View>
 
       </View>
     )

@@ -20,7 +20,7 @@ const AppNavigator = TabNavigator({
   },
   Leaderboard: {
     screen: Leaderboard
-  },
+  }
 }, {
   swipeEnabled: true,
   tabBarOptions: {
@@ -39,14 +39,17 @@ class Router extends Component {
       route: false
     }
   }
+ componentDidMount() {
+   
+  }
 
   componentDidMount() {
     checkLogin(evt => {
-      this.setState({ loading: false });
+
       if(evt.authenticated){
-        this.setState({route:'feed'});
+        this.setState({route:'feed', loading: false});
       } else {
-        this.setState({route:'login'});
+        this.setState({route:'login', loading:false});
       }
     });
   }
